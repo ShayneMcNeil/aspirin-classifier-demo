@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aspirin Detector</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Aspirin Detector</h1>
+    <p class="note">
+      Demo only. Not for medical or pharmacy decisions.
+    </p>
+
+    <input type="file" id="imageUpload" accept="image/*" />
+    <img id="preview" alt="Preview" />
+
+    <button id="predictBtn">Check Image</button>
+
+    <div id="result">
+      <h2>Result</h2>
+      <p id="topPrediction">No image analyzed yet.</p>
+      <div id="allPredictions"></div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
